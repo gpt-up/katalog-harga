@@ -1,9 +1,16 @@
 import json, html, os, urllib.parse
+from pathlib import Path
 
-SITE = "https://harcoproducttechnologies.netlify.app"
-ROOT = "E:/dell-price-list"
+ROOT = Path(__file__).resolve().parent
 
-with open(f"{ROOT}/data/products.json", encoding="utf-8") as f:
+_config = {}
+_config_path = ROOT / "config.json"
+if _config_path.exists():
+    _config = json.loads(_config_path.read_text(encoding="utf-8"))
+
+SITE = os.environ.get("SITE_URL", _config.get("site_url", "https://harcoproducttechnologies.netlify.app")).rstrip("/")
+
+with open(ROOT / "data/products.json", encoding="utf-8") as f:
     PRODUCTS = json.load(f)
 
 # ---------- label dictionaries (brand/cat/line/model -> human labels) ----------
@@ -79,7 +86,31 @@ AVAIL_MAP = {
     "last": "https://schema.org/LimitedAvailability",
     "indent": "https://schema.org/PreOrder",
     "otw": "https://schema.org/PreOrder",
+    "check": "https://schema.org/LimitedAvailability",
 }
+
+TITLE_SUFFIX = " | HPT Jakarta"
+MAX_TITLE_LEN = 70
+MAX_DESC_LEN = 160
+
+def truncate_at_word(text, max_len):
+    if len(text) <= max_len:
+        return text
+    cut = text[:max_len].rsplit(" ", 1)[0].rstrip(",.;-([")
+    return cut + "…"
+
+def build_product_title(model_name):
+    budget = MAX_TITLE_LEN - len(TITLE_SUFFIX)
+    return truncate_at_word(model_name, budget) + TITLE_SUFFIX
+
+def build_product_description(model_name):
+    prefix = "Harga "
+    suffix = ". Garansi resmi, cek stok & penawaran di Harco Product Technologies Jakarta."
+    suffix_after_ellipsis = " Garansi resmi, cek stok & penawaran di Harco Product Technologies Jakarta."
+    budget = MAX_DESC_LEN - len(prefix) - len(suffix)
+    if len(model_name) <= budget:
+        return prefix + model_name + suffix
+    return prefix + truncate_at_word(model_name, budget) + suffix_after_ellipsis
 
 WA_NUMBER = "6285899992775"
 
@@ -173,12 +204,16 @@ itemlist_json = json.dumps(itemlist, ensure_ascii=False, indent=2)
 
 # ================= 3) BUILD index.html FROM SHELL =================
 
-with open(f"{ROOT}/templates/index_shell.html", encoding="utf-8") as f:
+with open(ROOT / "templates/index_shell.html", encoding="utf-8") as f:
     shell = f.read()
 
-final_index = shell.replace("{{ITEMLIST_JSONLD}}", itemlist_json).replace("{{PRODUCT_ROWS}}", rows_html)
+final_index = (
+    shell.replace("{{ITEMLIST_JSONLD}}", itemlist_json)
+    .replace("{{PRODUCT_ROWS}}", rows_html)
+    .replace("{{SITE}}", SITE)
+)
 
-with open(f"{ROOT}/index.html", "w", encoding="utf-8") as f:
+with open(ROOT / "index.html", "w", encoding="utf-8") as f:
     f.write(final_index)
 
 print("index.html written:", len(final_index), "bytes")
@@ -259,7 +294,7 @@ PRODUCT_TEMPLATE = """<!DOCTYPE html>
 </html>
 """
 
-os.makedirs(f"{ROOT}/produk", exist_ok=True)
+os.makedirs(ROOT / "produk", exist_ok=True)
 sitemap_urls = []
 
 for p in PRODUCTS:
@@ -278,17 +313,14 @@ for p in PRODUCTS:
         f'      <li{" class=\"hi\"" if s["hi"] else ""}>{html.escape(s["text"], quote=False)}</li>'
         for s in p["specs"]
     ]
-    desc_specs = ", ".join(s["text"] for s in p["specs"][:4])
 
     if p["is_call"]:
         href = wa_link(p["model_name"])
         wa_icon = '<svg viewBox="0 0 24 24" width="12" height="12" fill="#fff"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33C8.5 21.5 10.2 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.28 1.18-1.76 1.24-.45.06-.98.09-1.58-.1-.36-.11-.83-.27-1.43-.53-2.52-1.09-4.16-3.63-4.29-3.8-.13-.17-1.02-1.36-1.02-2.6 0-1.23.65-1.84.88-2.09.22-.25.49-.31.66-.31.17 0 .33 0 .48.01.15.01.36-.06.56.43.22.53.73 1.83.8 1.96.06.13.1.28.02.45-.09.17-.13.28-.26.43-.13.15-.27.34-.39.46-.13.13-.26.27-.11.53.15.26.66 1.09 1.42 1.77.98.87 1.8 1.14 2.06 1.27.26.13.41.11.56-.06.15-.17.65-.76.82-1.02.17-.26.34-.22.56-.13.22.09 1.42.67 1.66.79.24.11.4.17.46.27.06.11.06.61-.16 1.2z"/></svg>'
         price_html = f'<a href="{href}" target="_blank" class="call-btn">{wa_icon}Tanya Harga</a>'
-        price_plain = "Hubungi kami via WhatsApp untuk harga"
         offers = None
     else:
         price_html = fmt_price(p["price"])
-        price_plain = price_html
         offers = {
             "@type": "Offer",
             "price": str(p["price"]),
@@ -304,10 +336,7 @@ for p in PRODUCTS:
     else:
         status_html = ""
 
-    description = f'{p["model_name"]} — {desc_specs}. {price_plain}. Harco Product Technologies, {brand_label} Authorized Reseller, Jakarta.'
-    if len(description) > 300:
-        cut = description[:297].rsplit(" ", 1)[0].rstrip(",.;")
-        description = cut + "..."
+    description = build_product_description(p["model_name"])
     description_attr = html.escape(description, quote=True)
 
     canonical = f"{SITE}/produk/{p['slug']}.html"
@@ -324,9 +353,9 @@ for p in PRODUCTS:
         jsonld["offers"] = offers
 
     html_out = PRODUCT_TEMPLATE.format(
-        title=html.escape(f'{p["model_name"]} — Harga & Spesifikasi | Harco Product Technologies', quote=False),
+        title=html.escape(build_product_title(p["model_name"]), quote=False),
         description=description_attr,
-        og_title=html.escape(f'{p["model_name"]} — Harco Product Technologies', quote=True),
+        og_title=html.escape(build_product_title(p["model_name"]), quote=True),
         canonical=canonical,
         jsonld=json.dumps(jsonld, ensure_ascii=False, indent=2),
         breadcrumb=breadcrumb,
@@ -339,7 +368,7 @@ for p in PRODUCTS:
         brand_label=brand_label,
     )
 
-    with open(f"{ROOT}/produk/{p['slug']}.html", "w", encoding="utf-8") as f:
+    with open(ROOT / "produk" / f"{p['slug']}.html", "w", encoding="utf-8") as f:
         f.write(html_out)
 
     sitemap_urls.append(canonical)
@@ -362,7 +391,15 @@ for u in sitemap_urls:
     lines.append('  </url>')
 lines.append('</urlset>')
 lines.append('')
-with open(f"{ROOT}/sitemap.xml", "w", encoding="utf-8") as f:
+with open(ROOT / "sitemap.xml", "w", encoding="utf-8") as f:
     f.write("\n".join(lines))
 
 print("sitemap.xml written, total URLs:", len(sitemap_urls) + 1)
+
+# ================= 6) BUILD robots.txt =================
+
+robots_txt = f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n"
+with open(ROOT / "robots.txt", "w", encoding="utf-8") as f:
+    f.write(robots_txt)
+
+print("robots.txt written")

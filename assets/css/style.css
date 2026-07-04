@@ -143,6 +143,7 @@ thead th.status{text-align:center;}
 .status-badge.indent{background:#FDE8E4;color:#C43D1C;}
 .status-badge.last{background:#FDE0E0;color:#C4291C;}
 .status-badge.otw{background:#E9EDF7;color:#3C4C82;}
+.status-badge.check{background:#EEF1F4;color:#5B6472;}
 
 tbody tr.product-row td{
   border-bottom:1px solid var(--line);
