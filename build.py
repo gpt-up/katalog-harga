@@ -314,6 +314,7 @@ PRODUCT_TEMPLATE = """<!DOCTYPE html>
 {jsonld}
 </script>
 
+<link rel="icon" href="../assets/img/logo/favicon.png">
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="../assets/css/product.css">
 </head>
@@ -471,6 +472,7 @@ CATEGORY_TEMPLATE = """<!DOCTYPE html>
 {jsonld}
 </script>
 
+<link rel="icon" href="../assets/img/logo/favicon.png">
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="../assets/css/category.css">
 </head>
