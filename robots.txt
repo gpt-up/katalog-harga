@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gpt-up.github.io/katalog-harga/sitemap.xml
+Sitemap: https://zesty-unicorn-7bc66e.netlify.app/sitemap.xml
