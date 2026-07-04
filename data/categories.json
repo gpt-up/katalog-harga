@@ -1,0 +1,240 @@
+[
+  {
+    "slug": "hpe-proliant-server",
+    "title": "Harga Server HPE ProLiant DL & ML | HPT Jakarta",
+    "h1": "Server HPE ProLiant — Rackmount & Tower",
+    "description": "Daftar harga server HPE ProLiant DL (rack) dan ML (tower) resmi. Konfigurasi Xeon, ECC, RAID, garansi resmi. Cek stok via WhatsApp HPT Jakarta.",
+    "og_title": "Server HPE ProLiant DL & ML — Harco Product Technologies",
+    "intro": [
+      "HPE ProLiant adalah lini server enterprise paling banyak dipakai untuk kebutuhan bisnis, mulai dari server rack ProLiant DL yang hemat ruang di data center, hingga server tower ProLiant ML yang cocok untuk kantor tanpa ruang server khusus.",
+      "Di Harco Product Technologies tersedia beragam konfigurasi ProLiant dengan prosesor Intel Xeon, memori ECC, opsi RAID, serta redundant power supply. Setiap unit bergaransi resmi HPE.",
+      "Harga dan ketersediaan tiap konfigurasi berbeda-beda. Silakan lihat daftar di bawah, atau langsung tanya harga & stok terbaru via WhatsApp untuk konfigurasi yang Anda butuhkan."
+    ],
+    "match": { "brand": "hp", "name_contains": "ProLiant" },
+    "related": ["hpe-rackmount-server", "hpe-tower-server", "hpe-microserver", "dell-poweredge-server"]
+  },
+  {
+    "slug": "hpe-rackmount-server",
+    "title": "Harga Server Rackmount HPE ProLiant DL | HPT Jakarta",
+    "h1": "Server Rackmount HPE (ProLiant DL & MicroServer)",
+    "description": "Harga server rackmount HPE ProLiant DL & MicroServer rack. Form factor 1U/2U hemat ruang rack, Xeon, ECC, RAID. Cek stok via WhatsApp HPT Jakarta.",
+    "og_title": "Server Rackmount HPE — Harco Product Technologies",
+    "intro": [
+      "Server rackmount HPE dirancang untuk dipasang di rak standar 19 inci, ideal untuk data center dan ruang server dengan banyak unit tersusun rapi. Form factor ringkas 1U/2U memaksimalkan kepadatan komputasi per rak.",
+      "Kategori ini mencakup ProLiant DL series dan MicroServer versi rackmount, dengan pilihan prosesor Xeon, memori ECC, dan konfigurasi storage SFF/LFF sesuai kebutuhan beban kerja.",
+      "Butuh bantuan memilih konfigurasi yang pas dengan budget dan beban kerja Anda? Hubungi tim kami via WhatsApp untuk konsultasi dan penawaran."
+    ],
+    "match": { "brand": "hp", "cat": "servers", "line": "rackmounts" },
+    "related": ["hpe-proliant-server", "hpe-tower-server", "hpe-microserver"]
+  },
+  {
+    "slug": "hpe-tower-server",
+    "title": "Harga Server Tower HPE ProLiant ML | HPT Jakarta",
+    "h1": "Server Tower HPE ProLiant ML",
+    "description": "Harga server tower HPE ProLiant ML resmi. Cocok untuk kantor tanpa ruang rack, Xeon, ECC, upgradable. Cek stok & penawaran via WhatsApp HPT Jakarta.",
+    "og_title": "Server Tower HPE ProLiant ML — Harco Product Technologies",
+    "intro": [
+      "Server tower HPE ProLiant ML berbentuk seperti PC tower berukuran besar, sehingga bisa langsung ditempatkan di ruang kerja tanpa memerlukan rak server. Pilihan tepat untuk kantor kecil-menengah yang mulai membangun infrastruktur server sendiri.",
+      "Seri ML menawarkan ruang ekspansi yang lega untuk penambahan storage dan memori di kemudian hari, ditenagai prosesor Intel Xeon dengan memori ECC untuk keandalan operasi 24 jam.",
+      "Lihat pilihan konfigurasi di bawah, dan tanyakan harga serta ketersediaan stok terbaru langsung ke tim kami melalui WhatsApp."
+    ],
+    "match": { "brand": "hp", "cat": "servers", "line": "towers" },
+    "related": ["hpe-proliant-server", "hpe-rackmount-server", "hpe-microserver"]
+  },
+  {
+    "slug": "hpe-microserver",
+    "title": "Harga HPE MicroServer Gen10 Plus & Gen11 | HPT Jakarta",
+    "h1": "HPE MicroServer Gen10 Plus v2 & Gen11",
+    "description": "Harga HPE MicroServer Gen10 Plus v2 & Gen11 resmi. Server mungil hemat daya untuk UKM & home lab, Xeon, ECC. Cek stok via WhatsApp HPT Jakarta.",
+    "og_title": "HPE MicroServer Gen10 Plus & Gen11 — Harco Product Technologies",
+    "intro": [
+      "HPE MicroServer adalah server berukuran mungil yang hemat daya dan senyap, dirancang khusus untuk usaha kecil, cabang, maupun home lab yang butuh server andal tanpa memakan tempat dan listrik besar.",
+      "Meski kompak, MicroServer Gen10 Plus v2 dan Gen11 tetap mendukung prosesor Intel Xeon, memori ECC, serta beberapa slot drive untuk penyimpanan file, backup, atau virtualisasi ringan.",
+      "Tersedia berbagai konfigurasi RAM dan storage. Silakan cek daftar di bawah atau tanyakan paket yang sesuai kebutuhan Anda via WhatsApp."
+    ],
+    "match": { "brand": "hp", "name_contains": "MicroServer" },
+    "related": ["hpe-proliant-server", "hpe-rackmount-server", "dell-poweredge-tower-server"]
+  },
+  {
+    "slug": "dell-poweredge-server",
+    "title": "Harga Server Dell PowerEdge | HPT Jakarta",
+    "h1": "Server Dell PowerEdge — Rack & Tower",
+    "description": "Daftar harga server Dell PowerEdge rack (R-series) & tower (T-series) resmi. Xeon, ECC, RAID, garansi resmi. Cek stok via WhatsApp HPT Jakarta.",
+    "og_title": "Server Dell PowerEdge — Harco Product Technologies",
+    "intro": [
+      "Dell PowerEdge adalah salah satu lini server paling populer untuk kebutuhan bisnis di Indonesia, tersedia dalam bentuk rack (seri R) untuk data center maupun tower (seri T) untuk kantor.",
+      "Setiap unit PowerEdge di Harco Product Technologies ditenagai prosesor Intel Xeon dengan memori ECC dan opsi RAID, serta bergaransi resmi Dell ProSupport.",
+      "Bandingkan konfigurasi rack dan tower di bawah, lalu tanyakan harga dan ketersediaan terbaru langsung via WhatsApp untuk mendapat penawaran terbaik."
+    ],
+    "match": { "brand": "dell", "cat": "servers" },
+    "related": ["dell-poweredge-rack-server", "dell-poweredge-tower-server", "hpe-proliant-server"]
+  },
+  {
+    "slug": "dell-poweredge-rack-server",
+    "title": "Harga Server Rack Dell PowerEdge R-Series | HPT",
+    "h1": "Server Rack Dell PowerEdge R-Series",
+    "description": "Harga server rack Dell PowerEdge R260, R360, R660xs & R760xs resmi. Form factor 1U/2U untuk data center. Cek stok & penawaran via WhatsApp HPT Jakarta.",
+    "og_title": "Server Rack Dell PowerEdge R-Series — Harco Product Technologies",
+    "intro": [
+      "Server rack Dell PowerEdge seri R dirancang untuk dipasang di rak 19 inci, cocok untuk data center dan ruang server yang membutuhkan kepadatan tinggi dengan form factor ringkas 1U hingga 2U.",
+      "Tersedia mulai dari PowerEdge R260 dan R360 untuk kebutuhan entry-level, hingga R660xs dan R760xs untuk beban kerja yang lebih berat, semuanya dengan prosesor Xeon dan memori ECC.",
+      "Konsultasikan kebutuhan rack server Anda dengan tim kami via WhatsApp untuk rekomendasi konfigurasi dan penawaran harga terbaik."
+    ],
+    "match": { "brand": "dell", "cat": "servers", "line": "rackmount" },
+    "related": ["dell-poweredge-server", "dell-poweredge-tower-server", "hpe-rackmount-server"]
+  },
+  {
+    "slug": "dell-poweredge-tower-server",
+    "title": "Harga Server Tower Dell PowerEdge T-Series | HPT",
+    "h1": "Server Tower Dell PowerEdge T-Series",
+    "description": "Harga server tower Dell PowerEdge T160 & T360 resmi. Cocok untuk kantor tanpa rak, Xeon, ECC, upgradable. Cek stok via WhatsApp HPT Jakarta.",
+    "og_title": "Server Tower Dell PowerEdge T-Series — Harco Product Technologies",
+    "intro": [
+      "Server tower Dell PowerEdge seri T berbentuk tower yang bisa langsung ditempatkan di ruang kerja, tanpa memerlukan rak server khusus — solusi ideal untuk kantor kecil dan menengah.",
+      "Model seperti PowerEdge T160 dan T360 menawarkan keseimbangan antara harga terjangkau dan kemampuan ekspansi, ditenagai Intel Xeon dengan memori ECC untuk operasi yang andal.",
+      "Lihat pilihan yang tersedia di bawah, dan hubungi kami via WhatsApp untuk menanyakan harga serta stok terkini."
+    ],
+    "match": { "brand": "dell", "cat": "servers", "line": "tower-server" },
+    "related": ["dell-poweredge-server", "dell-poweredge-rack-server", "hpe-tower-server"]
+  },
+  {
+    "slug": "dell-optiplex-desktop",
+    "title": "Harga Desktop Dell OptiPlex | HPT Jakarta",
+    "h1": "Desktop Dell OptiPlex — Tower, SFF & Micro",
+    "description": "Harga PC desktop Dell OptiPlex Tower, SFF & Micro resmi. Pilihan Core i3/i5/i7 untuk kantor & bisnis. Cek stok & penawaran via WhatsApp HPT Jakarta.",
+    "og_title": "Desktop Dell OptiPlex — Harco Product Technologies",
+    "intro": [
+      "Dell OptiPlex adalah lini PC desktop andalan untuk perkantoran dan bisnis, dikenal tangguh, stabil, dan hemat perawatan. Tersedia dalam beberapa form factor: Tower, Small Form Factor (SFF), dan Micro yang ringkas.",
+      "Pilihan prosesor mulai dari Intel Core i3 untuk tugas administratif ringan hingga Core i7 untuk beban kerja yang lebih berat, cocok untuk pengadaan dalam jumlah banyak di kantor.",
+      "Cek daftar OptiPlex yang tersedia di bawah. Untuk pembelian dalam jumlah banyak (korporat/instansi), silakan tanyakan penawaran khusus via WhatsApp."
+    ],
+    "match": { "brand": "dell", "cat": "desktop-towers", "name_contains": "Optiplex" },
+    "related": ["dell-pro-desktop", "dell-latitude-laptop", "monitor-dell"]
+  },
+  {
+    "slug": "dell-pro-desktop",
+    "title": "Harga Desktop Dell Pro Tower & Micro | HPT Jakarta",
+    "h1": "Desktop Dell Pro — Tower, Micro & Slim",
+    "description": "Harga desktop Dell Pro Tower, Micro & Slim generasi terbaru. Intel Core Ultra, cocok untuk bisnis modern. Cek stok via WhatsApp HPT Jakarta.",
+    "og_title": "Desktop Dell Pro — Harco Product Technologies",
+    "intro": [
+      "Dell Pro adalah penerus lini desktop bisnis Dell dengan penamaan baru, hadir dalam bentuk Tower, Micro, dan Slim untuk menyesuaikan kebutuhan ruang dan performa di lingkungan kerja modern.",
+      "Ditenagai prosesor Intel Core Ultra generasi terbaru, seri Dell Pro menawarkan efisiensi daya dan fitur keamanan bisnis, dengan opsi grafis terintegrasi maupun kartu grafis diskrit.",
+      "Simak konfigurasi Dell Pro yang tersedia di bawah, dan konsultasikan kebutuhan desktop bisnis Anda dengan tim kami via WhatsApp."
+    ],
+    "match": { "brand": "dell", "cat": "desktop-towers", "name_regex": "Dell Pro (Tower|Micro|Slim|Max Tower)" },
+    "related": ["dell-optiplex-desktop", "dell-precision-workstation", "monitor-dell"]
+  },
+  {
+    "slug": "dell-latitude-laptop",
+    "title": "Harga Laptop Dell Latitude | HPT Jakarta",
+    "h1": "Laptop Dell Latitude — Bisnis & Korporat",
+    "description": "Harga laptop Dell Latitude resmi untuk bisnis & korporat. Ringan, tahan lama, fitur keamanan. Cek stok & penawaran via WhatsApp HPT Jakarta.",
+    "og_title": "Laptop Dell Latitude — Harco Product Technologies",
+    "intro": [
+      "Dell Latitude adalah lini laptop bisnis yang dirancang untuk mobilitas dan keandalan tinggi, banyak dipilih perusahaan dan instansi karena daya tahannya serta fitur keamanan tingkat korporat.",
+      "Tersedia berbagai ukuran layar dan konfigurasi prosesor Intel Core, dengan bobot ringan yang nyaman dibawa bekerja mobile maupun rapat di luar kantor.",
+      "Untuk pengadaan laptop kantor dalam jumlah banyak, tim kami siap membantu memberikan penawaran khusus — hubungi via WhatsApp."
+    ],
+    "match": { "brand": "dell", "line": "latitude" },
+    "related": ["dell-precision-mobile-workstation", "dell-optiplex-desktop", "lenovo-ideapad-laptop"]
+  },
+  {
+    "slug": "dell-precision-workstation",
+    "title": "Harga Workstation Dell Precision Tower | HPT Jakarta",
+    "h1": "Workstation Dell Precision Tower",
+    "description": "Harga workstation Dell Precision Tower resmi. Xeon/Core i9, RTX Ada, untuk desain CAD, 3D & engineering. Cek stok & penawaran via WhatsApp HPT Jakarta.",
+    "og_title": "Workstation Dell Precision Tower — Harco Product Technologies",
+    "intro": [
+      "Dell Precision Tower adalah workstation desktop kelas profesional untuk pekerjaan berat seperti desain CAD, rendering 3D, simulasi engineering, dan editing video resolusi tinggi.",
+      "Ditenagai prosesor Intel Core i9 atau Xeon dengan kartu grafis NVIDIA RTX / RTX Ada bersertifikasi ISV, workstation ini dibangun untuk stabilitas dan performa pada aplikasi profesional.",
+      "Konsultasikan kebutuhan workstation Anda — dari spesifikasi grafis hingga kapasitas memori — dengan tim kami via WhatsApp untuk mendapat konfigurasi dan harga yang tepat."
+    ],
+    "match": { "brand": "dell", "cat": "workstations", "line": "precision" },
+    "related": ["dell-precision-mobile-workstation", "dell-pro-desktop", "dell-poweredge-server"]
+  },
+  {
+    "slug": "dell-precision-mobile-workstation",
+    "title": "Harga Mobile Workstation Dell Precision | HPT Jakarta",
+    "h1": "Mobile Workstation Dell Precision & Pro Max",
+    "description": "Harga mobile workstation Dell Precision & Pro Max resmi. NVIDIA RTX Pro, untuk desain & 3D mobile. Cek stok & penawaran via WhatsApp HPT Jakarta Pusat.",
+    "og_title": "Mobile Workstation Dell Precision & Pro Max — Harco Product Technologies",
+    "intro": [
+      "Mobile workstation menggabungkan kekuatan workstation desktop dengan portabilitas laptop, ideal untuk profesional kreatif dan engineer yang butuh performa grafis tinggi saat bekerja di lapangan.",
+      "Kategori ini mencakup lini Dell Precision Mobile dan Dell Pro Max (penerus mobile Precision), dengan prosesor Intel Core Ultra/HX dan kartu grafis NVIDIA RTX Pro untuk aplikasi profesional.",
+      "Tanyakan konfigurasi mobile workstation yang sesuai kebutuhan software Anda kepada tim kami via WhatsApp untuk rekomendasi dan penawaran."
+    ],
+    "match": { "brand": "dell", "cat": "workstations", "line": ["precision-mobile", "pro-max"] },
+    "related": ["dell-precision-workstation", "dell-latitude-laptop", "lenovo-legion-gaming-laptop"]
+  },
+  {
+    "slug": "monitor-dell",
+    "title": "Harga Monitor Dell Resmi | HPT Jakarta",
+    "h1": "Monitor Dell — Pro, UltraSharp & Essential",
+    "description": "Daftar harga monitor Dell resmi: seri E, Pro Plus, dan UltraSharp. Resolusi FHD, QHD, 4K & USB-C hub. Cek stok & penawaran via WhatsApp HPT Jakarta.",
+    "og_title": "Monitor Dell Resmi — Harco Product Technologies",
+    "intro": [
+      "Monitor Dell hadir dalam berbagai seri untuk beragam kebutuhan, mulai dari seri E yang ekonomis untuk kantor, seri Pro untuk produktivitas harian, hingga UltraSharp untuk pekerjaan yang menuntut akurasi warna.",
+      "Tersedia pilihan resolusi FHD, QHD, dan 4K, dengan opsi konektivitas modern seperti USB-C hub yang praktis untuk menyatukan daya, data, dan tampilan lewat satu kabel.",
+      "Lihat daftar monitor Dell yang tersedia di bawah. Untuk pembelian bundling dengan PC/laptop atau jumlah banyak, tanyakan penawaran via WhatsApp."
+    ],
+    "match": { "brand": "dell", "cat": "monitors" },
+    "related": ["dell-ultrasharp-monitor", "dell-optiplex-desktop", "dell-pro-desktop"]
+  },
+  {
+    "slug": "dell-ultrasharp-monitor",
+    "title": "Harga Monitor Dell UltraSharp 4K & QHD | HPT Jakarta",
+    "h1": "Monitor Dell UltraSharp — 4K, QHD & Thunderbolt",
+    "description": "Harga monitor Dell UltraSharp resmi: 4K, QHD, Thunderbolt hub & akurasi warna tinggi untuk kreator. Cek stok & penawaran via WhatsApp HPT Jakarta.",
+    "og_title": "Monitor Dell UltraSharp — Harco Product Technologies",
+    "intro": [
+      "Dell UltraSharp adalah lini monitor premium yang menjadi favorit kreator konten, desainer, dan profesional yang membutuhkan reproduksi warna akurat serta kualitas panel terbaik dari Dell.",
+      "Seri ini menghadirkan resolusi tinggi hingga 4K, konektivitas Thunderbolt/USB-C hub, dan cakupan warna luas — ideal untuk editing foto, video, dan desain grafis yang menuntut presisi.",
+      "Cek pilihan UltraSharp yang tersedia di bawah, dan tanyakan harga serta ketersediaan stok terbaru langsung via WhatsApp."
+    ],
+    "match": { "brand": "dell", "cat": "monitors", "name_contains": "UltraSharp" },
+    "related": ["monitor-dell", "dell-precision-workstation"]
+  },
+  {
+    "slug": "lenovo-yoga-laptop",
+    "title": "Harga Laptop Lenovo Yoga | HPT Jakarta",
+    "h1": "Laptop Lenovo Yoga — Premium & 2-in-1",
+    "description": "Harga laptop Lenovo Yoga resmi: Slim, 2-in-1, Book & Pro. Layar OLED, Intel Core Ultra, premium. Cek stok & penawaran via WhatsApp HPT Jakarta.",
+    "og_title": "Laptop Lenovo Yoga — Harco Product Technologies",
+    "intro": [
+      "Lenovo Yoga adalah lini laptop premium yang mengutamakan desain tipis, layar berkualitas, dan fleksibilitas, termasuk varian 2-in-1 yang layarnya bisa dilipat 360 derajat menjadi mode tablet.",
+      "Banyak seri Yoga hadir dengan panel OLED yang tajam dan prosesor Intel Core Ultra terbaru, cocok untuk profesional kreatif maupun pengguna yang menginginkan laptop bergaya dan bertenaga.",
+      "Simak pilihan Lenovo Yoga di bawah. Beberapa varian eksklusif memerlukan konfirmasi stok — silakan tanya ketersediaan via WhatsApp."
+    ],
+    "match": { "brand": "lenovo", "name_contains": "Yoga" },
+    "related": ["lenovo-ideapad-laptop", "lenovo-legion-gaming-laptop", "dell-latitude-laptop"]
+  },
+  {
+    "slug": "lenovo-legion-gaming-laptop",
+    "title": "Harga Laptop Gaming Lenovo Legion | HPT Jakarta",
+    "h1": "Laptop Gaming Lenovo Legion",
+    "description": "Harga laptop gaming Lenovo Legion resmi: RTX 50 series, layar cepat, cooling handal untuk gaming & kreator. Cek stok via WhatsApp HPT Jakarta.",
+    "og_title": "Laptop Gaming Lenovo Legion — Harco Product Technologies",
+    "intro": [
+      "Lenovo Legion adalah lini laptop gaming kelas atas yang dirancang untuk performa maksimal, dengan sistem pendingin canggih, layar refresh rate tinggi, dan kartu grafis NVIDIA GeForce RTX generasi terbaru.",
+      "Selain untuk gaming, tenaga besar Legion juga diandalkan kreator konten untuk rendering, editing video, dan pekerjaan grafis berat yang menuntut GPU kuat.",
+      "Cek varian Legion yang tersedia di bawah, dan tanyakan harga serta stok terkini via WhatsApp untuk mendapatkan unit yang Anda incar."
+    ],
+    "match": { "brand": "lenovo", "cat": "gaming", "line": ["legion-5", "legion-7", "legion-pro-5"] },
+    "related": ["lenovo-ideapad-laptop", "lenovo-yoga-laptop", "dell-precision-mobile-workstation"]
+  },
+  {
+    "slug": "lenovo-ideapad-laptop",
+    "title": "Harga Laptop Lenovo IdeaPad | HPT Jakarta",
+    "h1": "Laptop Lenovo IdeaPad — Slim & 2-in-1",
+    "description": "Harga laptop Lenovo IdeaPad resmi: Slim 3, Slim 5 & 2-in-1. Ringan, hemat, untuk harian & pelajar. Cek stok & penawaran via WhatsApp HPT Jakarta.",
+    "og_title": "Laptop Lenovo IdeaPad — Harco Product Technologies",
+    "intro": [
+      "Lenovo IdeaPad adalah lini laptop serbaguna dengan harga terjangkau, cocok untuk kebutuhan sehari-hari seperti bekerja, belajar, browsing, dan hiburan ringan.",
+      "Tersedia varian IdeaPad Slim yang ringkas dan ringan, serta IdeaPad 2-in-1 yang layarnya bisa dilipat menjadi mode tablet — fleksibel untuk pelajar, mahasiswa, dan pekerja mobile.",
+      "Lihat pilihan IdeaPad di bawah. Untuk pembelian jumlah banyak (sekolah/kantor), silakan tanyakan penawaran khusus via WhatsApp."
+    ],
+    "match": { "brand": "lenovo", "name_contains": "IdeaPad" },
+    "related": ["lenovo-yoga-laptop", "lenovo-legion-gaming-laptop", "dell-latitude-laptop"]
+  }
+]

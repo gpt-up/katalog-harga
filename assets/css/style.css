@@ -118,6 +118,16 @@ nav.ln-lines a.active{background:#E2231A;border-color:#E2231A;color:#fff;}
 h1{font-size:18px;padding:20px 20px 0;margin:0;}
 .sub{padding:4px 20px 0;color:var(--gray);font-size:12.5px;}
 
+/* ===== homepage "Kategori Populer" section ===== */
+.popcat{margin:18px 0 0;padding:16px 0 0;border-top:1px solid var(--line);}
+.popcat h2{font-size:14px;margin:0 0 10px;}
+.popcat-links{display:flex;gap:8px;flex-wrap:wrap;}
+.popcat-links a{
+  font-size:12px;font-weight:700;padding:7px 13px;border-radius:8px;
+  background:#EEF1F4;color:var(--gray);text-decoration:none;border:1px solid var(--line);
+}
+.popcat-links a:hover{background:var(--headbg);color:#fff;border-color:var(--headbg);}
+
 /* ===== table ===== */
 table{width:100%;border-collapse:collapse;margin-top:18px;table-layout:fixed;}
 col.c-img{width:150px;}
