@@ -158,6 +158,12 @@ tbody tr.product-row:nth-child(even){background:#F7F9FB;}
 .specs li.hi{color:var(--red);font-weight:700;}
 
 .price-cell{text-align:right;font-weight:700;font-size:13.5px;white-space:nowrap;}
+.call-btn{
+  display:inline-flex;align-items:center;gap:5px;
+  background:#25D366;color:#fff;font-weight:700;font-size:11.5px;
+  padding:6px 12px;border-radius:999px;white-space:nowrap;
+}
+.call-btn:hover{filter:brightness(1.05);}
 
 .thumb{
   width:100%;aspect-ratio:1/1;max-width:130px;
